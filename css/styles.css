@@ -96,7 +96,6 @@ div embed {
   margin: 1em .9em 0 .9em;
   font-size: 1.2em;
   box-sizing: content-box;
-  text-align: ;
   background-color: white;
   box-shadow: 4px 4px 10px darkgray;
   width: auto;
@@ -117,7 +116,7 @@ div embed {
   clear:both;
   height: 2.5em;
   width: 96%;
-  margin: 0 1em 0 1em;
+  margin: 0 1em;
   position: relative;
   top: 0;
   padding: 1em 0 0 0;
@@ -129,26 +128,31 @@ div embed {
   width: 2.5em;
   font-size: 1.2em;
   padding: .3em;
-  margin: -.3em 0 0 1em;
+  margin: -.4em 0 .4em 1em;
   border-radius: 7px;
   color: #f6d309;
   cursor: pointer;
 }
 
 #menu-contents {
+  display: none;
   height: 2.5em;
-  background-color: #black;
+  background-color: black;
   color: #f6d309;
   cursor: pointer;
-  top: 0;
-  font-size: 1.2em;
-  padding: .3em;
-}
+  font-size: 1.1em;
+
+  text-align: center;
 
 }
-#body-wrapperID {
+#menu-contents div {
+  border: 1px solid #e9e9e9;
+  background-color: black;
+  margin: -1px;
+  padding: .2em;
 
 }
+
 
 #my_header {
   cursor: pointer;
@@ -167,7 +171,7 @@ div embed {
   padding: 1em;
   color: black;
   height: 300px;
-  margin: 0 1em 0 1em;
+  margin: 0em 1em 0 1em;
   position: relative;
 }
 
@@ -178,6 +182,9 @@ div embed {
   padding: 1em;
 }
 
+#body-wrapperID {
+  display: block;
+}
 
 #lessons_front_page {
   background-image: url(../images/lessons_front_page.jpg);
@@ -365,7 +372,9 @@ div embed {
       width: 14.69em;
       height: 14.70em;
   }
-
+  #menu {
+    width: 46em;
+  }
 }
 
 @media screen and (min-width: 992px) {
