@@ -110,10 +110,42 @@ div embed {
   box-sizing: content-box;
   width: 17.5em;
   height: 28.44em;
-
-
 }
 
+#menu {
+  background-color: black;
+  clear:both;
+  height: 2.5em;
+  width: 96%;
+  margin: 0 1em 0 1em;
+  position: relative;
+  top: 0;
+  padding: 1em 0 0 0;
+}
+
+#menu-button {
+  background-color: black;
+  border: 2px solid #f6d309;
+  width: 2.5em;
+  font-size: 1.2em;
+  padding: .3em;
+  margin: -.3em 0 0 1em;
+  border-radius: 7px;
+  color: #f6d309;
+  cursor: pointer;
+}
+
+#menu-contents {
+  height: 2.5em;
+  background-color: #black;
+  color: #f6d309;
+  cursor: pointer;
+  top: 0;
+  font-size: 1.2em;
+  padding: .3em;
+}
+
+}
 #body-wrapperID {
 
 }
@@ -126,9 +158,8 @@ div embed {
   font-size: 1.5em;
   color: black;
   top: 12em;
-  left: 1em;
   position: absolute;
-  padding-left: .5em;
+
 }
 
 #navbar {
@@ -137,7 +168,7 @@ div embed {
   color: black;
   height: 300px;
   margin: 0 1em 0 1em;
-
+  position: relative;
 }
 
 #Tim_smile_pic {
@@ -145,8 +176,6 @@ div embed {
   right: 0;
   position: absolute;
   padding: 1em;
-  margin-right: 1em;
-
 }
 
 
@@ -244,7 +273,7 @@ div embed {
   #mail_address {
     font-size: 1em;
     color: black;
-    left: 2em;
+    left: 1em;
     position: absolute;
     top: 8em;
 
@@ -253,7 +282,7 @@ div embed {
     right: -0.9em;
     bottom: -0.8em
   }
-  footer {
+  footer, #menu {
     width: 90%;
   }
 
@@ -283,7 +312,7 @@ div embed {
     margin: .1em 1em;
     height:auto;
   }
-  footer {
+  footer, #menu {
     width: 92%;
   }
 
@@ -301,7 +330,6 @@ div embed {
     color: black;
     left: 1em;
     position: absolute;
-    padding-left: .5em;
     top: 6.2em;
   }
   #lessons_front_page {
@@ -348,7 +376,7 @@ div embed {
         width: 19.35em;
         height: 19.33em;
     }
-  footer {
+  footer, #menu {
     width: 96.8%;
   }
 }
