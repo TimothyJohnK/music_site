@@ -64,9 +64,10 @@ em {
 
 }
 
-div embed {
+embed {
   width: auto;
-  height: 100%;
+  min-height: 100%;
+  box-sizing: content-box;
   box-shadow: 4px 4px 10px darkgray;
 
 }
@@ -106,9 +107,13 @@ div embed {
   display: none;
   margin: 1em .9em 0 .85em;
   font-size: 1.2em;
-  box-sizing: content-box;
-  width: 17.5em;
-  height: 28.44em;
+
+  width: 100%;
+  height: 100%;
+}
+
+#calendar_front_page2 {
+  display: none;
 }
 
 #menu {
@@ -309,10 +314,7 @@ div embed {
     padding: 1em 0 .2em 0;
     text-align: center;
   }
-  div embed {
-    width: 19.2em;
-
-  }
+ 
   .body_content {
     width: 23em;
     height: 23em;
