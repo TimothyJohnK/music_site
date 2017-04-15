@@ -56,7 +56,31 @@ footer {
 
 }
 
+#cal_month {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  box-shadow: 4px 4px 5px darkgray;
+}
 
+table {
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 4px 4px 10px darkgray;
+  margin-left: .5em;
+}
+
+
+tr {
+  width: 17.5em;
+}
+
+td {
+  border: 1px solid black;
+  width: 2.2em;
+  height: 2.2em;
+
+}
 
 em {
   text-align: center;
@@ -66,7 +90,7 @@ em {
 
 embed {
   width: auto;
-  min-height: 100%;
+  min-height: 23em;
   box-sizing: content-box;
   box-shadow: 4px 4px 10px darkgray;
 
@@ -94,26 +118,32 @@ embed {
 #lessons_front_page2 {
   display: none;
   padding: 1em;
-  margin: 1em .9em 0 .9em;
-  font-size: 1.2em;
+  margin: 1em .9em 0 1em;
+  font-size: 1em;
   box-sizing: content-box;
   background-color: white;
   box-shadow: 4px 4px 10px darkgray;
   width: auto;
 
 }
-
+#email_two:hover {
+  color: lightblue;
+}
 #composition_front_page2 {
   display: none;
   margin: 1em .9em 0 .85em;
   font-size: 1.2em;
-
   width: 100%;
   height: 100%;
 }
 
 #calendar_front_page2 {
   display: none;
+  padding: 1em;
+  margin: 1em .9em 0 .9em;
+  background-color: #e9e9e9;
+  
+  
 }
 
 #menu {
@@ -146,9 +176,8 @@ embed {
   color: #f6d309;
   cursor: pointer;
   font-size: 1.1em;
-
   text-align: center;
-
+  
 }
 #menu-contents div {
   border: 1px solid #e9e9e9;
@@ -156,6 +185,9 @@ embed {
   margin: -1px;
   padding: .2em;
 
+}
+#mail_address:hover, #menu-button:hover, #menu-Lessons:hover, #menu-Composition:hover, #menu-Calendar:hover {
+  color: gray;
 }
 
 
@@ -187,7 +219,7 @@ embed {
   padding: 1em;
 }
 
-#body-wrapperID {
+#main_page {
   display: block;
 }
 
@@ -250,7 +282,7 @@ embed {
   }
   h1 {
     font-size: 2em;
-
+  
   }
   #lessons_front_page {
     background-image: url(../images/lessons_front_page.jpg);
@@ -314,7 +346,11 @@ embed {
     padding: 1em 0 .2em 0;
     text-align: center;
   }
- 
+  
+  th {
+    font-size: .5em;
+  }
+
   .body_content {
     width: 23em;
     height: 23em;
@@ -325,9 +361,15 @@ embed {
     width: 92%;
   }
 
+  td {
+    height: 3.5em;
+    width: 3.5em;
+  }
+
   #composition_front_page2 {
     width: 25em;
   }
+
   #Tim_smile_pic {
     display: none;
     }
@@ -377,17 +419,26 @@ embed {
   #menu {
     width: 46em;
   }
+    td {
+    height: 6.5em;
+    width: 6.5em;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
   body {
     width: 62em;
-    }
-    .body_content {
-        width: 19.35em;
-        height: 19.33em;
-    }
+  }
+  .body_content {
+      width: 19.35em;
+      height: 19.33em;
+  }
   footer, #menu {
     width: 96.8%;
+  }
+    td {
+  height: 8em;
+  width: 8em;
   }
 }
