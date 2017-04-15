@@ -45,13 +45,16 @@
         Tim studied with Billy Barnard &#40Count Basie&#47Rufus Reid&#47Duke Ellington&#41 while attending U of M - Duluth, where he majored in Jazz Studies and Theory&#47Composition. He studied composition with Dr. Tom Wegren &#40student of Beveridge Webster and Nadia Boulanger&#41 and Dr. Justin Rubin. He studied Jazz and Theory privately with Paul Renz as well as voice with Matt Culloton, Artistic Director and Conductor of The Singers, formerly the Dale Warland Singers.
       </p>
       <p>
-        Tim has performed and played bluegrass, celtic, classical, rock, jazz, Klezmer, folk, fusion, country, pop, rock, and funk. Tim&#39s writing includes: full orchestrations, music for chamber orchestras, jazz combos, as well as choral pieces , folk, pop, country, rock, funk, hip-hop songs and arrangements, instrumental arrangements, and pieces for solo instrument and voice.  He recently provided original jazz piano tracks for the Katherine Keener&#47Jeanne Tripplehorn feature, &#34Little Pink House&#34.  Tim can be found writing songs, at home cooking, or performing around town with a wonderful variety of talented musicians.
+        Tim has performed and played bluegrass, celtic, classical, rock, jazz, Klezmer, folk, fusion, country, pop, rock, and funk. Tim&#39s writing includes: full orchestrations, music for chamber orchestras, jazz combos, as well as choral pieces , folk, pop, country, rock, funk, hip-hop songs and arrangements, instrumental arrangements, and pieces for solo instrument and voice.  He recently provided original jazz piano tracks for the Katherine Keener&#47Jeanne Tripplehorn feature, &#34Little Pink House&#34.  Tim can be found writing music, at home cooking, or performing around town with a wonderful variety of talented musicians.
+      </p>
+      <p>
+        Check out Tim's performance schedule by clicking on the calendar tab in the menu.
       </p>
       <p>
         Tim teaches privately in south Minneapolis at The Music Lab in the Nokomis and Hale neighborhoods.
       </p>
       <p>
-        Send Tim an <a href="mailto:timkirchhofmusic@gmail.com"> email </a> to schedule lessons
+        Send Tim an <a href="mailto:timkirchhofmusic@gmail.com" id="email_two"> email </a> to schedule lessons
       </p>
       <p>
         <em> (click on Tim Kirchhof at the top to return the the home page) </em>
@@ -69,10 +72,39 @@
   </div>
 
  <div id="calendar_front_page2">
-    <h1> CALENDAR PAGE </h1>
+
+    <table>
+      <thead>
+        <tr>
+          <h2 id="cal_month">TEST TEXT. IF YOU SEE THIS SOMETHING WENT WRONG AND MAY GOD HAVE MERCY ON US ALL<h2>
+        </tr>
+
+      <tr>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+       </thead>
+       <tr id="calendarBody"></tr>
+  
+       <!--<tr id="week_five">
+        <td class="sunday"></td>
+        <td class="monday"></td>
+        <td class="tuesday"></td>
+        <td class="wednesday"></td>
+        <td class="thursday"></td>
+        <td class="friday"></td>
+        <td class="saturday"></td>
+      </tr>-->
+      
+      </table>
  </div>
 
-  <div class="clearfix body__content-wrapper" id="body-wrapperID">
+  <div class="clearfix body__content-wrapper" id="main_page">
     <div id="lessons_front_page" class="body_content">
       <h3>Lessons/Bio</h3>
       </div>
@@ -91,9 +123,24 @@
 
   <footer>
     <div id="ASCAP_member_img"></div>
-      <span id="copyright">&copy Tim Kirchhof 2017</span>
+      <span id="copyright"></span>
     </footer>
+
 
 </body>
 
+<!-- get rid of this script eventually -->
+    <script>
+      var dateCnstnt = new Date();
+      var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      (function year() {
+        copyright.innerText = '© Tim Kirchhof ' + dateCnstnt.getFullYear()
+      })();
+      (function month() {
+        cal_month.innerText = months[dateCnstnt.getMonth()];
+      })();
+ 
+      
+    
+  </script>
 </html>
