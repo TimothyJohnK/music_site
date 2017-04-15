@@ -15,6 +15,8 @@ window.onload = function() {
     var menuCalendar = document.querySelector('#menu-Calendar');
     var copyright = document.getElementById('#copyright');
 
+    var cal_month = document.getElementById("#cal_month");
+
     menu.onclick = function() {
       if (menuContents.style.display === 'none') {
           menuContents.style.display = 'block';
