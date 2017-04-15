@@ -15,46 +15,6 @@ window.onload = function() {
     var menuCalendar = document.querySelector('#menu-Calendar');
     var copyright = document.getElementById('#copyright');
 
-    var cal_month = document.getElementById("#cal_month");
-
-    var dateCnstnt = new Date();
-    var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-    var monthLength = [31,28,31,30,31,30,31,31,30,31,30,31];
-
-    var calTable = document.getElementById("#calendarBody")
-  
-    
-    var currentMonthLength = monthLength[dateCnstnt.getMonth()];
-    var day = dateCnstnt.getDate();
-    var dayOfWeek = dateCnstnt.getDay();
-    var dayOfWeekCounter = dayOfWeek;
-    var numberOfWeek;
-    var activeCell;
-    
-    while (day > 0) {
-          numberOfWeek = Math.floor(((day-1) + dayOfWeek)/ 7);
-         
-          activeCell = calTable.insertRow(numberOfWeek);
-          var currentDayInFunc = activeCell.insertCell(dayOfWeek);
-          currentDayInFunc.innerText = day;
-          day--;
-          dayOfWeekCounter--;
-          if (dayOfWeekCounter < 0) {
-            dayOfWeekCounter = 6;
-          }
-    }
-
- // second function that finishes the calendar by counting up from the current day
-
-    // while (day <= currentMonthLength) {
-
-
-    // for (var i=0; i >= monthLength[dateCnstnt.getMonth()]; i++) {
-    //     for (var j=dateCnstnt.getDay)
-
-
-    // };
-
     menu.onclick = function() {
       if (menuContents.style.display === 'none') {
           menuContents.style.display = 'block';
