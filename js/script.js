@@ -17,6 +17,62 @@ window.onload = function() {
 
     var cal_month = document.getElementById("#cal_month");
 
+    // var body_width = window.innerWidth;
+    // var days_of_week = document.getElementById("days_of_week");
+
+    var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    var daysInMonths = [31, leap_year, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    var date = new Date();
+    var dayOfMonth = date.getDate();
+    var dayOfWeek = date.getDay();
+    var startOfMonthOffset = 0;
+    var leap_year = 28;
+    var calendarCell = document.getElementById("calendar_body");
+
+    function calendarBuilder () {
+        if (date.getMonth() === '1' && date.getFullYear()/ 4 === 0 ) {
+          leap_year = 29;
+        }
+
+        while (dayOfMonth > 0){
+            dayOfWeek--;
+            dayOfMonth--;
+            if (dayOfWeek < 0) {
+              dayOfWeek = 6;
+            };
+        };
+        
+        startOfMonthOffset = dayOfWeek;
+        var IdCounter = 1;
+
+        for (var i = 0; i = startOfMonthOffset; i++) {
+            var newSpan = document.createElement("span");
+            var newContent = document.createTextNode(' ');
+            newSpan.appendChild(newContent);
+            var currentSpan = document.getElementById("span" + IdCounter.toString()); 
+            document.getElementById("calendar_body").insertBefore(newSpan, currentSpan);
+            IdCounter = i;
+          };
+        
+        while (dayOfMonth <= daysInMonths[date.getMonth()]) {
+          newSpan = document.createElement("span");
+          newContent = document.createTextNode(dayOfMonth);
+          newSpan.appendChild(newContent);
+          currentSpan = document.getElementById("span" + IdCounter.toString()); 
+          document.getElementById("calendar_body").insertBefore(newSpan, currentSpan);
+          if (dayOfWeek + startOfMonthOffset > 6) {
+          var newWeek = document.createElement('div');
+          };
+          if (dayOfWeek >= 7) {
+            dayOfWeek = 0;
+          };
+          dayOfWeek ++;
+          dayOfMonth ++;
+          IdCounter ++;
+        };
+
+    };
+
     menu.onclick = function() {
       if (menuContents.style.display === 'none') {
           menuContents.style.display = 'block';
@@ -26,13 +82,16 @@ window.onload = function() {
         spacing.style.margin = '0em 1em';
       };
     };
-    
+
+
+
     menu.addEventListener('click', e => console.log('why does it not open on first click?'));
 
     show.onclick = function() {
       document.querySelector('#main_page').style.display = 'block';
       document.querySelector('#lessons_front_page2').style.display = 'none';
       document.querySelector('#composition_front_page2').style.display = 'none';
+      document.querySelector('#calendar_front_page2').style.display = 'none';
     };
 
     lessons.onclick = function() {
@@ -71,6 +130,7 @@ window.onload = function() {
       document.querySelector('#bottom_padding_container').style.display = 'block';
       document.querySelector('#lessons_front_page2').style.display = 'none';
       document.querySelector('#composition_front_page2').style.display = 'none';
+      calendarBuilder();
     };
     menuCalendar.onclick = function() {
       document.querySelector('#main_page').style.display = 'none';
@@ -78,6 +138,7 @@ window.onload = function() {
       document.querySelector('#bottom_padding_container').style.display = 'block';
       document.querySelector('#lessons_front_page2').style.display = 'none';
       document.querySelector('#composition_front_page2').style.display = 'none';
+      calendarBuilder();
     };
 
 }; //end of window.onload wrapper

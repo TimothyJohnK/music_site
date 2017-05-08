@@ -73,35 +73,22 @@
 
  <div id="calendar_front_page2">
 
-    <table>
-      <thead>
-        <tr>
-          <h2 id="cal_month">TEST TEXT. IF YOU SEE THIS SOMETHING WENT WRONG AND MAY GOD HAVE MERCY ON US ALL<h2>
-        </tr>
-
-      <tr>
-        <th>Sunday</th>
-        <th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Thursday</th>
-        <th>Friday</th>
-        <th>Saturday</th>
-      </tr>
-       </thead>
-       <tr id="calendarBody"></tr>
-  
-       <!--<tr id="week_five">
-        <td class="sunday"></td>
-        <td class="monday"></td>
-        <td class="tuesday"></td>
-        <td class="wednesday"></td>
-        <td class="thursday"></td>
-        <td class="friday"></td>
-        <td class="saturday"></td>
-      </tr>-->
       
-      </table>
+        <div>
+          <h2 id="cal_month">TEST TEXT. IF YOU SEE THIS SOMETHING WENT WRONG AND MAY GOD HAVE MERCY ON US ALL<h2>
+        </div>
+
+      <div id="days_of_week">
+        <span id="Sunday">Sun</span>
+        <span id="Monday">Mon</span>
+        <span id="Tuesday">Tue</span>
+        <span id="Wednesday">Wed</span>
+        <span id="Thursday">Thu</span>
+        <span id="Friday">Fri</span>
+        <span id="Saturday">Sat</span>
+      </div>
+      <div id="calendar_body"></div>
+      
  </div>
 
   <div class="clearfix body__content-wrapper" id="main_page">
@@ -139,6 +126,7 @@
       (function month() {
         cal_month.innerText = months[dateCnstnt.getMonth()];
       })();
+
  
       
     

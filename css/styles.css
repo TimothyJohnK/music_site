@@ -63,6 +63,20 @@ footer {
   box-shadow: 4px 4px 5px darkgray;
 }
 
+#days_of_week {
+  text-align: center;
+}
+
+#days_of_week>span {
+  background-color: white;
+  width: 100%;
+  margin: 3.6%;
+  padding: .1em .8em;
+  text-align: center;
+  box-shadow: 4px 4px 5px darkgray;
+  font-size: 1.2em;
+}
+
 table {
   border-collapse: collapse;
   background-color: white;
@@ -294,9 +308,12 @@ embed {
       width: 17.5em;
       height: 5em;
       margin-top: 1em;
-
-
   }
+
+  #days_of_week>span {
+      margin: 0em;
+  }
+
   h2 > span {
     float:left;
   }
@@ -341,7 +358,10 @@ embed {
   h2 > span {
     float:left;
   }
-
+  #days_of_week>span {
+      margin: 0em;
+      font-size: .8em;
+  }
   h3 {
     padding: 1em 0 .2em 0;
     text-align: center;
@@ -422,6 +442,9 @@ embed {
     td {
     height: 6.5em;
     width: 6.5em;
+  }
+  #days_of_week>span {
+    margin: .2em;
   }
 
 }
