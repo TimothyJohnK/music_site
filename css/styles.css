@@ -56,18 +56,18 @@ footer {
 
 }
 
-#cal_month {
+.cal_month {
   background-color: white;
   width: 100%;
   text-align: center;
   box-shadow: 4px 4px 5px darkgray;
 }
 
-#days_of_week {
+.days_of_week {
   text-align: center;
 }
 
-#days_of_week>span {
+.days_of_week>span {
   background-color: white;
   width: 100%;
   margin: 3.6%;
@@ -129,7 +129,7 @@ embed {
   height: 0;
 }
 
-#lessons_front_page2 {
+.lessons_front_page2 {
   display: none;
   padding: 1em;
   margin: 1em .9em 0 1em;
@@ -140,10 +140,10 @@ embed {
   width: auto;
 
 }
-#email_two:hover {
+.email_two:hover {
   color: lightblue;
 }
-#composition_front_page2 {
+.composition_front_page2 {
   display: none;
   margin: 1em .9em 0 .85em;
   font-size: 1.2em;
@@ -151,16 +151,16 @@ embed {
   height: 100%;
 }
 
-#calendar_front_page2 {
+.calendar_front_page2 {
   display: none;
   padding: 1em;
   margin: 1em .9em 0 .9em;
-  background-color: #e9e9e9;
+  background-color: .e9e9e9;
   
   
 }
 
-#menu {
+.menu {
   background-color: black;
   clear:both;
   height: 2.5em;
@@ -171,7 +171,7 @@ embed {
   padding: 1em 0 0 0;
 }
 
-#menu-button {
+.menu-button {
   background-color: black;
   border: 2px solid #f6d309;
   width: 2.5em;
@@ -183,7 +183,7 @@ embed {
   cursor: pointer;
 }
 
-#menu-contents {
+.menu-contents {
   display: none;
   height: 2.5em;
   background-color: black;
@@ -193,23 +193,23 @@ embed {
   text-align: center;
   
 }
-#menu-contents div {
+.menu-contents div {
   border: 1px solid #e9e9e9;
   background-color: black;
   margin: -1px;
   padding: .2em;
 
 }
-#mail_address:hover, #menu-button:hover, #menu-Lessons:hover, #menu-Composition:hover, #menu-Calendar:hover {
+.mail_address:hover, .menu-button:hover, .menu-Lessons:hover, .menu-Composition:hover, .menu-Calendar:hover {
   color: gray;
 }
 
 
-#my_header {
+.my_header {
   cursor: pointer;
 }
 
-#mail_address {
+.mail_address {
   font-size: 1.5em;
   color: black;
   top: 12em;
@@ -217,7 +217,7 @@ embed {
 
 }
 
-#navbar {
+.navbar {
   background-color: #f6d309;
   padding: 1em;
   color: black;
@@ -226,35 +226,35 @@ embed {
   position: relative;
 }
 
-#Tim_smile_pic {
+.Tim_smile_pic {
   top: 0;
   right: 0;
   position: absolute;
   padding: 1em;
 }
 
-#main_page {
+.main_page {
   display: block;
 }
 
-#lessons_front_page {
+.lessons_front_page {
   background-image: url(../images/lessons_front_page.jpg);
   background-size: cover;
   cursor: pointer;
 }
 
-#composition_front_page {
+.composition_front_page {
   background-image: url(../images/composition_front_page-190x190.jpg);
   background-size:  cover;
   cursor: pointer;
 }
-#calendar_front_page {
+.calendar_front_page {
   background-image: url(../images/calendar_front_page.jpg);
   background-size: cover;
   cursor: pointer;
 }
 
-#ASCAP_member_img {
+.ASCAP_member_img {
   background-image: url(../images/ASCAP_high_res_round.png);
   background-size: cover;
   height: 4.3em;
@@ -263,7 +263,7 @@ embed {
 
 }
 
-#copyright {
+.copyright {
   font-size: 1.2em;
   position: absolute;
   bottom: 0;
@@ -273,17 +273,17 @@ embed {
 }
 
 
-#composition_front_page h3 {
+.composition_front_page h3 {
   text-shadow: 2px -1px 5px white;
   color: black;
 }
 
 
-#calendar_front_page  h3{
+.calendar_front_page  h3{
   color: white;
 }
 
-#bottom_padding_container {
+.bottom_padding_container {
   display: none;
   padding-bottom: 6em;
 }
@@ -298,7 +298,7 @@ embed {
     font-size: 2em;
   
   }
-  #lessons_front_page {
+  .lessons_front_page {
     background-image: url(../images/lessons_front_page.jpg);
     background-size:auto;
     cursor: pointer;
@@ -310,7 +310,7 @@ embed {
       margin-top: 1em;
   }
 
-  #days_of_week>span {
+  .days_of_week>span {
       margin: 0em;
   }
 
@@ -325,13 +325,13 @@ embed {
     padding: 1em 0 .2em 0;
     text-align: center;
   }
-  #Tim_smile_pic {
+  .Tim_smile_pic {
     display: none;
     }
-  #navbar {
+  .navbar {
     height: 8.5em;
   }
-  #mail_address {
+  .mail_address {
     font-size: 1em;
     color: black;
     left: 1em;
@@ -339,11 +339,11 @@ embed {
     top: 8em;
 
   }
-  #copyright {
+  .copyright {
     right: -0.9em;
     bottom: -0.8em
   }
-  footer, #menu {
+  footer, .menu {
     width: 90%;
   }
 
@@ -358,7 +358,7 @@ embed {
   h2 > span {
     float:left;
   }
-  #days_of_week>span {
+  .days_of_week>span {
       margin: 0em;
       font-size: .8em;
   }
@@ -377,7 +377,7 @@ embed {
     margin: .1em 1em;
     height:auto;
   }
-  footer, #menu {
+  footer, .menu {
     width: 92%;
   }
 
@@ -386,38 +386,38 @@ embed {
     width: 3.5em;
   }
 
-  #composition_front_page2 {
+  .composition_front_page2 {
     width: 25em;
   }
 
-  #Tim_smile_pic {
+  .Tim_smile_pic {
     display: none;
     }
-  #navbar {
+  .navbar {
     height: 10em;
   }
-  #mail_address {
+  .mail_address {
     font-size: 1.5em;
     color: black;
     left: 1em;
     position: absolute;
     top: 6.2em;
   }
-  #lessons_front_page {
+  .lessons_front_page {
     background-position:  top;
     position: center;
     margin-top: .9em;
 
   }
 
-  #composition_front_page {
+  .composition_front_page {
 
     background-position:center;
     position: center;
 
   }
 
-  #calendar_front_page {
+  .calendar_front_page {
     background-repeat:no-repeat;
     background-position:center;
 
@@ -436,14 +436,14 @@ embed {
       width: 14.69em;
       height: 14.70em;
   }
-  #menu {
+  .menu {
     width: 46em;
   }
     td {
     height: 6.5em;
     width: 6.5em;
   }
-  #days_of_week>span {
+  .days_of_week>span {
     margin: .2em;
   }
 
@@ -457,7 +457,7 @@ embed {
       width: 19.35em;
       height: 19.33em;
   }
-  footer, #menu {
+  footer, .menu {
     width: 96.8%;
   }
     td {
