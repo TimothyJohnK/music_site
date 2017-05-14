@@ -13,12 +13,12 @@ window.onload = function() {
     var menuLessons = document.querySelector('#menu-Lessons');
     var menuComposition = document.querySelector('#menu-Composition');
     var menuCalendar = document.querySelector('#menu-Calendar');
-    var copyright = document.getElementById('#copyright');
+    var copyright = document.getElementsByClassName('#copyright');
 
-    var cal_month = document.getElementById("#cal_month");
+    var cal_month = document.getElementsByClassName("#cal_month");
 
     // var body_width = window.innerWidth;
-    // var days_of_week = document.getElementById("days_of_week");
+    // var days_of_week = document.getElementsByClassName("days_of_week");
 
     var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
     var daysInMonths = [31, leap_year, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
@@ -27,7 +27,7 @@ window.onload = function() {
     var dayOfWeek = date.getDay();
     var startOfMonthOffset = 0;
     var leap_year = 28;
-    var calendarCell = document.getElementById("calendar_body");
+    var calendarCell = document.getElementsByClassName("calendar_body");
 
     function calendarBuilder () {
         if (date.getMonth() === '1' && date.getFullYear()/ 4 === 0 ) {
@@ -49,8 +49,8 @@ window.onload = function() {
             var newSpan = document.createElement("span");
             var newContent = document.createTextNode(' ');
             newSpan.appendChild(newContent);
-            var currentSpan = document.getElementById("span" + IdCounter.toString()); 
-            document.getElementById("calendar_body").insertBefore(newSpan, currentSpan);
+            var currentSpan = document.getElementsByClassName("span" + IdCounter.toString()); 
+            document.getElementsByClassName("calendar_body").insertBefore(newSpan, currentSpan);
             IdCounter = i;
           };
         
@@ -58,8 +58,8 @@ window.onload = function() {
           newSpan = document.createElement("span");
           newContent = document.createTextNode(dayOfMonth);
           newSpan.appendChild(newContent);
-          currentSpan = document.getElementById("span" + IdCounter.toString()); 
-          document.getElementById("calendar_body").insertBefore(newSpan, currentSpan);
+          currentSpan = document.getElementsByClassName("span" + IdCounter.toString()); 
+          document.getElementsByClassName("calendar_body").insertBefore(newSpan, currentSpan);
           if (dayOfWeek + startOfMonthOffset > 6) {
           var newWeek = document.createElement('div');
           };
