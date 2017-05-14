@@ -171,7 +171,7 @@ embed {
   padding: 1em 0 0 0;
 }
 
-.menu-button {
+.menu_button {
   background-color: black;
   border: 2px solid #f6d309;
   width: 2.5em;
@@ -183,7 +183,7 @@ embed {
   cursor: pointer;
 }
 
-.menu-contents {
+.menu_contents {
   display: none;
   height: 2.5em;
   background-color: black;
@@ -193,14 +193,14 @@ embed {
   text-align: center;
   
 }
-.menu-contents div {
+.menu_contents div {
   border: 1px solid #e9e9e9;
   background-color: black;
   margin: -1px;
   padding: .2em;
 
 }
-.mail_address:hover, .menu-button:hover, .menu-Lessons:hover, .menu-Composition:hover, .menu-Calendar:hover {
+.mail_address:hover, .menu_button:hover, .menu_Lessons:hover, .menu_Composition:hover, .menu_Calendar:hover {
   color: gray;
 }
 
