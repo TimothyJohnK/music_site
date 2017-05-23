@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Tim Kirchhof Guitar Piano Composition Lessons</title>
+  <link rel='stylesheet' href='css/styles.css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato|Lora:700' rel='stylesheet'>
+  <script src='js/script.js'></script>
+</head>
+<body>
+<header>
+  <div class='menu'>
+    <div class='menu_button'>
+      Menu
+      </div>
+    <div class='menu_contents'>
+      <div class='menu_Lessons'>
+        Lessons/Bio
+      </div>
+      <div class='menu_listen'>
+        Music
+      </div>
+      <div class='menu_Calendar'>
+        Calendar
+      </div>
+    </div>
+  </div>
+  <div class='navbar'>
+    <h1 class='my_header'>Tim Kirchhof</h1>
+    <h2><span>Guitar&nbsp Piano &nbsp</span><span>Composition&nbsp Lessons</span></h2>
+    <a href='mailto:timkirchhofmusic@gmail.com' class='mail_address'>TimKirchhofMusic@gmail.com</a>
+    <a href='index.html'>
+      <img src='images/timsmileatadamcropped.png' alt='Tim_at_The_Amsterdam' class='Tim_smile_pic'>
+    </a>
+  </div>
+</header>
+
+<div class='lessons_front_page2'>
+  <h3>Bio</h3>
+  <p>
+    Tim studied with Billy Barnard &#40Count Basie&#47Rufus Reid&#47Duke Ellington&#41 while attending U of M - Duluth, where he majored in Jazz Studies and Theory&#47Composition. He studied composition with Dr. Tom Wegren &#40student of Beveridge Webster and Nadia Boulanger&#41 and Dr. Justin Rubin. He studied Jazz and Theory privately with Paul Renz as well as voice with Matt Culloton, Artistic Director and Conductor of The Singers, formerly the Dale Warland Singers.
+  </p>
+  <p>
+    Tim has performed and played bluegrass, celtic, classical, rock, jazz, Klezmer, folk, fusion, country, pop, rock, and funk. Tim&#39s writing includes: full orchestrations, music for chamber orchestras, jazz combos, as well as choral pieces , folk, pop, country, rock, funk, hip-hop songs and arrangements, instrumental arrangements, and pieces for solo instrument and voice.  He recently provided original jazz piano tracks for the Katherine Keener&#47Jeanne Tripplehorn feature, &#34Little Pink House&#34.  Tim can be found writing music, at home cooking, or performing around town with a wonderful variety of talented musicians.
+  </p>
+  <p>
+    Check out Tim's performance schedule by clicking on the calendar tab in the menu.
+  </p>
+  <p>
+    Tim teaches privately in south Minneapolis at The Music Lab in the Nokomis and Hale neighborhoods.
+  </p>
+  <p>
+    Send Tim an <a href='mailto:timkirchhofmusic@gmail.com' class='email_two'> email </a> to schedule lessons
+  </p>
+  <p>
+    <em> (click on Tim Kirchhof at the top to return the the home page) </em>
+  </p>
+</div>
+
+<div class='listen_front_page2'>
+  <div class='audio_player'>
+      <div class='song_title'>In a Tone So Mellow - movie source music</div>
+      <audio controls='controls' class='song'>
+          <source src='songs/in_a_tone_so_mellow.mp3' type='audio/mp3'>
+          Your browser does not support the <code>audio</code> element.
+      </audio>
+      <div class='song_title'>Tricotism - Kirchhof and Yanes Duo</div>
+      <audio controls='controls' class='song'>
+          <source src='songs/trico_sample.mp3' type='audio/mp3'>
+          Your browser does not support the <code>audio</code> element.
+      </audio>
+      <div class='song_title'>Under My Skin - soundtrack sample</div>
+      <audio controls='controls' class='song underMySkin'>
+          <source src='songs/under_my_skin.mp3' type='audio/mp3'>
+          Your browser does not support the <code>audio</code> element.
+      </audio>
+
+  </div>
+</div>
+
+<div class='calendar_front_page2'>
+    <div class='cal_month'>TEST TEXT. IF YOU SEE THIS SOMETHING WENT WRONG AND MAY GOD HAVE MERCY ON US ALL</div>
+
+  <section>
+    <div class='days_of_week'>
+      <span class='week__header'>Sun</span>
+      <span class='week__header'>Mon</span>
+      <span class='week__header'>Tue</span>
+      <span class='week__header'>Wed</span>
+      <span class='week__header'>Thu</span>
+      <span class='week__header'>Fri</span>
+      <span class='week__header'>Sat</span>
+    </div>
+
+    <section>
+      <div class='calendar_body'></div>
+    </section>
+  </section>
+</div>
+
+<div class='clearfix body__content_wrapper main_page'>
+    <div class='lessons_front_page body_content'>
+      <h3>Lessons/Bio</h3>
+    </div>
+
+    <div class='listen_front_page body_content'>
+      <h3>Music</h3>
+    </div>
+
+    <div class='calendar_front_page body_content'>
+      <h3>Calendar</h3>
+    </div>
+</div>
+
+<div class='bottom_padding_container'></div>
+
+<footer>
+  <div class='ASCAP_member_img'></div>
+    <span class='copyright'></span>
+  </footer>
+
+</body>
+
+<!-- get rid of this script eventually -->
+<script>
+  var dateCnstnt = new Date(),
+    copyright = document.getElementsByClassName('copyright')[0],
+    cal_month = document.getElementsByClassName('cal_month')[0],
+    months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  (function year() {
+    copyright.innerText = '© Tim Kirchhof ' + dateCnstnt.getFullYear()
+  })();
+
+
+  (function month() {
+    cal_month.innerText = months[dateCnstnt.getMonth()];
+  })();  
+</script>
+</html>

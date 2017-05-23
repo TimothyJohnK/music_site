@@ -1,0 +1,498 @@
+html {
+  height: 100%;
+
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #e9e9e9;
+  min-height: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-family: 'Lora', serif;
+  padding-left: .1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  padding-left: .2em;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 0;
+
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+.audio_player {
+  box-shadow: 4px 4px 10px darkgray;
+  margin-bottom: 1em;
+  width: 50%;
+  align-content: center;
+  padding: .2em;
+  background-color: white;
+}
+.song_title {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  padding: .2em;
+  background-color: #f6d309;
+}
+.song {
+  flex: 1;
+  -webkit-flex-direction: column;
+  flex-direction:column;
+  align-content: space-around;
+}
+
+header {
+  width: inherit;
+}
+
+footer {
+  text-align: center;
+  float: none;
+  clear:both;
+  height: 5em;
+  width: 96%;
+  background-color: #f6d309;
+  margin: 0 1em 0 1em;
+  position: absolute;
+  bottom: 0;
+
+}
+
+.cal_month {
+  background-color: white;
+  box-shadow: 4px 4px 5px darkgray;
+  margin-bottom: .3em;
+  justify-content: center;
+  flex: 1;
+  box-shadow: 4px 4px 5px darkgray;
+  font-size: 2.2em;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.days_of_week {
+  font-size: 1.4em;
+  justify-content: center;
+  margin: 2px;
+  flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+
+.week__header, .calendar__day {
+  background-color: white;
+  text-align: center;
+  box-shadow: 4px 4px 5px darkgray;
+  justify-content: center;
+  flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.calendar_body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+
+.calendar__week {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  
+}
+
+.calendar__day {
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  padding: 2.6em 0em 2.6em 0em;
+  margin: .1em;
+}
+
+.calendar__day:hover {
+  color: rgb(0,160,255);
+  cursor: pointer;
+  background-color: rgba(200,200,200,.1);
+}
+
+em {
+  text-align: center;
+  font-size: .9em;
+}
+
+.body_content {
+  padding: .1em 0em 0em 1.1em;
+  margin: 1em 0em 0em 1em;
+  position:sticky;
+  float: left;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 10px darkgray;
+}
+
+.body__content-wrapper {
+  padding-bottom: 6em;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.lessons_front_page2 {
+  display: none;
+  padding: 1em;
+  margin: 1em .9em 0 1em;
+  font-size: 1em;
+  box-sizing: content-box;
+  background-color: white;
+  box-shadow: 4px 4px 10px darkgray;
+  width: auto;
+}
+
+.email_two:hover {
+  color: lightblue;
+}
+
+.listen_front_page2 {
+  display:  none;
+  display: none;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  justify-content: left;
+  margin: 1em .9em 0 .85em;
+  font-size: 1.2em;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.calendar_front_page2 {
+  display: none;
+  margin: 1em;
+  background-color: #e9e9e9;
+  
+}
+
+.menu {
+  background-color: black;
+  clear:both;
+  height: 2.5em;
+  width: 96%;
+  margin: 0 1em;
+  position: relative;
+  top: 0;
+  padding: 1em 0 0 0;
+}
+
+.menu_button {
+  background-color: black;
+  border: 2px solid #f6d309;
+  /*  border: 2px solid #f6d309; */
+
+  width: 2.5em;
+  font-size: 1.2em;
+  padding: .3em;
+  margin: -.4em 0 .4em 1em;
+  border-radius: 7px;
+  color: #f6d309;
+  cursor: pointer;
+}
+
+.menu_contents {
+  display: none;
+  height: 2.5em;
+  background-color: black;
+  color: #f6d309;
+  cursor: pointer;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.menu_contents div {
+  border: 1px solid #e9e9e9;
+  background-color: black;
+  margin: -1px;
+  padding: .2em;
+}
+
+.mail_address:hover, .menu_button:hover, .menu_Lessons:hover, .menu_listen:hover, .menu_Calendar:hover {
+  color: lightgray;
+}
+
+.my_header {
+  cursor: pointer;
+}
+
+.mail_address {
+  font-size: 1.5em;
+  color: black;
+  top: 12em;
+  position: absolute;
+}
+
+.navbar {
+  background-color: #f6d309;
+  padding: 1em;
+  color: black;
+  height: 300px;
+  margin: 0em 1em 0 1em;
+  position: relative;
+}
+
+.Tim_smile_pic {
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding: 1em;
+}
+
+.main_page {
+  display: block;
+}
+
+.lessons_front_page {
+  background-image: url(../images/lessons_front_page.jpg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.listen_front_page {
+  background-image: url(../images/composition_front_page-190x190.jpg);
+  background-size:  cover;
+  cursor: pointer;
+}
+
+.calendar_front_page {
+  background-image: url(../images/calendar_front_page.jpg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.ASCAP_member_img {
+  background-image: url(../images/ASCAP_high_res_round.png);
+  background-size: cover;
+  height: 4.3em;
+  width: 4.3em;
+  margin: .3em 0 0 .5em;
+}
+
+.copyright {
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1.4em;
+}
+
+
+.listen_front_page h3 {
+  text-shadow: 2px -1px 5px white;
+  color: black;
+}
+
+
+.calendar_front_page  h3{
+  color: white;
+}
+
+.bottom_padding_container {
+  display: none;
+  padding-bottom: 6em;
+}
+
+
+@media screen and (max-width: 399px) {
+  body {
+    width: 19.5em;
+
+  }
+  h1 {
+    font-size: 2em;
+  
+  }
+  .lessons_front_page {
+    background-image: url(../images/lessons_front_page.jpg);
+    background-size:auto;
+    cursor: pointer;
+  }
+  .listen_front_page2 {
+    width: 40%;
+  }
+  
+  .audio_player, .song {
+    width:40%;
+    display: flex;
+    display: -webkit-flex;
+  }
+  .body_content {
+      width: 17.5em;
+      height: 5em;
+      margin-top: 1em;
+  }
+
+  h2 > span {
+    float:left;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    padding: 1em 0 .2em 0;
+    text-align: center;
+  }
+  .Tim_smile_pic {
+    display: none;
+    }
+  .navbar {
+    height: 8.5em;
+  }
+  .mail_address {
+    font-size: 1em;
+    color: black;
+    left: 1em;
+    position: absolute;
+    top: 8em;
+
+  }
+  .copyright {
+    right: -0.9em;
+    bottom: -0.8em
+  }
+  footer, .menu {
+    width: 90%;
+  }
+  .calendar__day {
+  padding: .8em 0em;
+  }
+
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  body {
+    width: 25em;
+  }
+  h2 > span {
+    float:left;
+  }
+ 
+  h3 {
+    padding: 1em 0 .2em 0;
+    text-align: center;
+  }
+  
+  th {
+    font-size: .5em;
+  }
+
+  .body_content {
+    width: 23em;
+    height: 23em;
+    margin: .1em 1em;
+    height:auto;
+  }
+  footer, .menu, .listen_front_page2 {
+    width: 92%;
+  }
+
+  td {
+    height: 3.5em;
+    width: 3.5em;
+  }
+
+
+  .Tim_smile_pic {
+    display: none;
+    }
+  .navbar {
+    height: 10em;
+  }
+  .mail_address {
+    font-size: 1.5em;
+    color: black;
+    left: 1em;
+    position: absolute;
+    top: 6.2em;
+  }
+  .lessons_front_page {
+    background-position:  top;
+    position: center;
+    margin-top: .9em;
+  }
+
+  .listen_front_page {
+    background-position:center;
+    position: center;
+  }
+
+  .calendar_front_page {
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+  .calendar__day {
+  padding: .8em 0em;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  body {
+    width: 48em;
+  }
+  .body_content {
+      width: 14.69em;
+      height: 14.70em;
+  }
+  .menu {
+    width: 46em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    width: 62em;
+  }
+  .body_content {
+      width: 19.35em;
+      height: 19.33em;
+  }
+  footer, .menu {
+    width: 96.8%;
+  }
+
+}
