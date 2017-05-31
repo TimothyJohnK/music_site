@@ -192,7 +192,7 @@ em {
   display: none;
   -webkit-flex-direction: column;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   margin: 1em .9em 0 .85em;
   font-size: 1.2em;
   width: 100%;

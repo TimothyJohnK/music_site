@@ -23,14 +23,19 @@ jQuery(function ($) {
                 "file": "sky_becomes_the_night"
             }, {
                 "track": 2,
-                "name": "Upon the Foundation - Tim Kirchhof and Robin Rapsys from the major motion Picture 'Little Pink House'",
-                "length": "8:31",
-                "file": "BS_TF"
+                "name": "Upon the Foundation - Tim Kirchhof/Robin Rapsys from the motion picture 'Little Pink House'",
+                "length": "1:43",
+                "file": "upon_the_foundation"
             }, {
                 "track": 3,
-                "name": "The Forsaken (Take 2) - Smith St. Basement (Nov. 03)",
-                "length": "8:37",
-                "file": "SSB___11_03_TFTake_2"
+                "name": "Meillots Aeon Won - Tim Kirchhof/Robin Rapsys from the motion picture 'Little Pink House'",
+                "length": "1:30",
+                "file": "melilots_aeon_won"
+            }, {
+                "track": 4,
+                "name": "Watchman - Tim Kirchhof from the Album 'Northern Melody'",
+                "length": "2:35",
+                "file": "watchman"
             }],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,
