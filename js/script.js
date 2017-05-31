@@ -42,7 +42,7 @@ window.addEventListener('load', function () {
       //   of the calendar.
       // - Subtract 7 to get starting point of counter, i.e. days on the
       //   calendar grid that are not in the current month.
-      j = monthStartOffset = (dayOfMonth + 7 - (dayOfWeek + 1)) % 7 - 7,
+      j = monthStartOffset = (dayOfMonth + 7 - (dayOfWeek + 1)) % 7 - 6,
       weekArray,
       monthDiv = document.createElement('div');
       monthDiv.classList.add('calendar__month');
