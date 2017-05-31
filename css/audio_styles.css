@@ -1,7 +1,6 @@
 /* Desktop*/
 .container { position:relative; margin:0 auto; width:700px; }
-.column { width:inherit;
-margin: 1em 0em -.5em 0em; }
+.column { width:inherit;}
 
 
 /* Tablet (Portrait)*/
@@ -37,16 +36,8 @@ vertical-align:baseline;
 ul { list-style:none; }
 
 /* Typography*/
-h6,p { color:#808080; font-weight:200; }
+h6 { color:#808080; font-weight:200; }
 h6 { font-size:18px; line-height:20px; margin:4px 0 20px; }
-p { font-size:18px; line-height:20px; margin:0 0 2px; }
-
-
-/* Links*/
-a,a:visited { color:#ddd; outline:0; text-decoration:underline; }
-a:hover,a:focus { color:#bbb; }
-p a,p a:visited { line-height:inherit; }
-
 
 /* Misc.*/
 .add-bottom { margin-bottom:20px !important; }
@@ -59,7 +50,6 @@ p a,p a:visited { line-height:inherit; }
 
 /* Default / Desktop / Firefox */
 audio { margin:0 15px 0 14px; width:670px; }
-#mainwrap { box-shadow:0 0 6px 1px rgba(0,0,0,.25); }
 #audiowrap { background-color:#f6d309; margin:0 auto;}
 #plwrap { margin:0 auto; }
 #tracks { position:relative; text-align:center; }
