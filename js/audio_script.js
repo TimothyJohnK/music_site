@@ -18,25 +18,47 @@ jQuery(function ($) {
             extension = '',
             tracks = [{
                 "track": 1,
-                "name": " Night Becomes the Sky - Tim Kirchhof from the Album 'The Light'",
+                "name": " Night Becomes the Sky - from the Album 'The Light'",
                 "length": "7:13",
                 "file": "sky_becomes_the_night"
             }, {
                 "track": 2,
-                "name": "Upon the Foundation - Tim Kirchhof/Robin Rapsys from the motion picture 'Little Pink House'",
+                "name": "Upon the Foundation - from the motion picture 'Little Pink House'",
                 "length": "1:43",
                 "file": "upon_the_foundation"
             }, {
                 "track": 3,
-                "name": "Meillots Aeon Won - Tim Kirchhof/Robin Rapsys from the motion picture 'Little Pink House'",
+                "name": "Meillots Aeon Won - from the motion picture 'Little Pink House'",
                 "length": "1:30",
                 "file": "melilots_aeon_won"
             }, {
                 "track": 4,
-                "name": "Watchman - Tim Kirchhof from the Album 'Northern Melody'",
+                "name": "Watchman - from the Album 'Northern Melody'",
                 "length": "2:35",
                 "file": "watchman"
+            }, {
+                "track": 5,
+                "name": "SFX/sound design - Spaceship Computer noise background",
+                "length": "0:54",
+                "file": "sfx_tng_computer_noise"
+            }, {
+                "track": 6,
+                "name": "Sound Design - tanpura influenced guitar ostinato",
+                "length": "0:48",
+                "file": "tanpura_guitar"
+            }, {
+                "track": 7,
+                "name": "Sound Design - guitar and drum driving background",
+                "length": "1:49",
+                "file": "driving_background_build"
+            }, {
+                "track": 8,
+                "name": "Talk - from the Album 'Northern Melody'",
+                "length": "1:44",
+                "file": "talk"
             }],
+
+        
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,
                     trackName = value.name,
@@ -53,7 +75,7 @@ jQuery(function ($) {
             npTitle = $('#npTitle'),
             audio = $('#audio1').bind('play', function () {
                 playing = true;
-                npAction.text('Now Playing...');
+                npAction.text('Playing');
             }).bind('pause', function () {
                 playing = false;
                 npAction.text('Paused...');
