@@ -17,9 +17,7 @@ window.addEventListener('load', function () {
     menuCalendar = document.getElementsByClassName('menu_Calendar')[0],
     copyright = document.getElementsByClassName('copyright')[0],
     cal_month = document.getElementsByClassName('cal_month')[0],
-    cal_day = document.querySelector('calendar__day'),
-    song_volume =  document.getElementsByClassName('underMySkin')[0].volume;
-
+    cal_day = document.querySelector('calendar__day');
 
   function calendarBuilder() {
     var date = new Date(),

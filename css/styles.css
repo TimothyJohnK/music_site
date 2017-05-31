@@ -179,7 +179,7 @@ em {
   font-size: 1em;
   box-sizing: content-box;
   background-color: white;
-  box-shadow: 4px 4px 10px darkgray;
+  /*box-shadow: 4px 4px 10px darkgray;*/
   width: auto;
 }
 
