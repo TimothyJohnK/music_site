@@ -66,6 +66,11 @@ jQuery(function ($) {
                 "name": "End of Days Jogger - from the Album 'The Dark'",
                 "length": "6:56",
                 "file": "end_of_days_jogger"
+            }, {
+                "track": 11,
+                "name": "Let Us Have the Future - Churchill remix",
+                "length": "3:23",
+                "file": "let_us_have_the_future"
             }],
 
         
