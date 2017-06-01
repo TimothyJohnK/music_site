@@ -58,8 +58,8 @@ jQuery(function ($) {
                 "file": "talk"
             }, {
                 "track": 9,
-                "name": "Sound Design - guitar and drum driving background",
-                "length": "1:49",
+                "name": "End of Days Jogger - from the Album 'The Dark'",
+                "length": "6:56",
                 "file": "end_of_days_jogger"
             }],
 
