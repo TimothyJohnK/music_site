@@ -14,7 +14,7 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = '/songs/',
+            mediaPath = 'https://raw.githubusercontent.com/TimothyJohnK/music_site/master/songs/',
             extension = '',
             tracks = [{
                 "track": 1,
