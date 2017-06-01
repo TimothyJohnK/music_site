@@ -56,6 +56,11 @@ jQuery(function ($) {
                 "name": "Talk - from the Album 'Northern Melody'",
                 "length": "1:44",
                 "file": "talk"
+            }, {
+                "track": 9,
+                "name": "Sound Design - guitar and drum driving background",
+                "length": "1:49",
+                "file": "end_of_days_jogger"
             }],
 
         

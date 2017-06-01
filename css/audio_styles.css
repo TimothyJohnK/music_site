@@ -20,7 +20,7 @@
 /* Mobile (Landscape)*/
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-.container { width:420px; }
+.container { width:336px; }
 }
 
 /* CSS Reset*/
@@ -175,10 +175,11 @@ html[data-useragent*='OS 8'] audio { width:550px; }
 html[data-useragent*='OS 9'] audio { width:550px; }
 html[data-useragent*='Chrome'] audio { width:533px; }
 html[data-useragent*='Chrome'][data-useragent*='Android'] audio { margin-left:4px; width:545px; }
+#npTitle { width: 325px}
 }
 
 /* Mobile Landscape */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+/*@media only screen and (min-width: 480px) and (max-width: 767px) {
 audio { width:390px; }
 html[data-useragent*='MSIE 9.0'] audio { width:400px; }
 html[data-useragent*='MSIE 10.0'] audio { width:407px; }
@@ -188,11 +189,12 @@ html[data-useragent*='OS 8'] audio { width:414px; }
 html[data-useragent*='OS 9'] audio { width:414px; }
 html[data-useragent*='Chrome'] audio { width:397px; }
 html[data-useragent*='Chrome'][data-useragent*='Mobile'] audio { margin-left:4px; width:410px; }
-#npTitle { width:245px; }
-}
+#npTitle { width:215px; }
+#mainWrap {width: 336px}
+}*/
 
 /* Mobile Portrait */
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 767px) {
 audio { width:270px; }
 html[data-useragent*='MSIE 9.0'] audio { width:280px; }
 html[data-useragent*='MSIE 10.0'] audio { width:287px; }
