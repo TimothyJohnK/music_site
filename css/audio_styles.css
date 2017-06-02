@@ -40,10 +40,9 @@ h6 { color:#808080; font-weight:200; }
 h6 { font-size:18px; line-height:20px; margin:4px 0 20px; }
 
 /* Misc.*/
-.add-bottom { margin-bottom:20px !important; }
 .left { float:left; }
 .right { float:right; }
-.center { text-align:center; }
+.center { text-align:center;}
 
 /* Highlight Styles */
 ::selection { background-color:white; color:#444; }
