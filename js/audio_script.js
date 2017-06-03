@@ -33,9 +33,9 @@ jQuery(function ($) {
                 "file": "upon_the_foundation"
             }, {
                 "track": 4,
-                "name": "Watchman - from the Album 'Northern Melody'",
-                "length": "2:35",
-                "file": "watchman"
+                "name": "Odder Dinguses - soundtrack",
+                "length": "2:09",
+                "file": "odder_dinguses"
             }, {
                 "track": 5,
                 "name": "SFX/sound design - Spaceship Computer noise background",
@@ -54,8 +54,8 @@ jQuery(function ($) {
             }, {
                 "track": 8,
                 "name": "Sound Design - guitar and drum driving background",
-                "length": "1:49",
-                "file": "driving_background_build"
+                "length": "1:48",
+                "file": "driving_build_mastered"
             },{
                 "track": 9,
                 "name": "Talk - from the Album 'Northern Melody'",
@@ -68,9 +68,9 @@ jQuery(function ($) {
                 "file": "end_of_days_jogger"
             }, {
                 "track": 11,
-                "name": "Let Us Have the Future - Churchill remix",
-                "length": "3:23",
-                "file": "let_us_have_the_future"
+                "name": "Watchman - from the Album 'Northern Melody'",
+                "length": "2:35",
+                "file": "watchman"
             }],
 
         
