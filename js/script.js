@@ -90,33 +90,11 @@ window.addEventListener("load", function() {
     }
   }
 
-  const gigList = [
-    {
-      group: "some string",
-      date: {
-        month: 12,
-        day: 12
-      },
-      location: ""
-    },
-    {
-      group: "some string",
-      date: {
-        month: 12,
-        day: 12
-      },
-      location: ""
-    }
-  ];
   // // mouseover function for calendar
   let classname = document.getElementsByClassName("calendar__day");
   const highlightDay = function() {
     classname.style.backgroundColor = "red";
   };
-
-  classname.innerText === gigList.key[date[day]]
-    ? classname.addEventListener("mouseover", highlightDay())
-    : null;
 
   menu.addEventListener("click", function() {
     if (getComputedStyle(menuContents).display === "none") {
