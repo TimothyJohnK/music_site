@@ -56,18 +56,13 @@ jQuery(function ($) {
                 "name": "Sound Design - guitar and drum driving background",
                 "length": "1:48",
                 "file": "driving_build_mastered"
-            },{
-                "track": 9,
-                "name": "Talk - from the Album 'Northern Melody'",
-                "length": "1:44",
-                "file": "talk"
             }, {
-                "track": 10,
+                "track": 9,
                 "name": "End of Days Jogger - from the Album 'The Dark'",
                 "length": "6:56",
                 "file": "end_of_days_jogger"
             }, {
-                "track": 11,
+                "track": 10,
                 "name": "Watchman - from the Album 'Northern Melody'",
                 "length": "2:35",
                 "file": "watchman"
